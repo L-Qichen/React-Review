@@ -5,13 +5,13 @@ const GameList = () => {
   return (
     <>
       <h1 className="header">amazon best sellers</h1>
-      <section className="gamelist">
+      <main className="gamelist">
         {games.map((game) => {
           return (
             <Game game={game} key={game.id} />
           )
         })}
-      </section>
+      </main>
     </>
   )
 }
