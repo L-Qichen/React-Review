@@ -14,10 +14,15 @@ body{
   background: #fafafa;
   color: #292929;
 }
+.header{
+  text-align: center;
+  text-transform: capitalize;
+  margin-top: 4rem;
+}
 .gamelist{
   width: 90vw;
   max-width: 1400px;
-  margin: 5rem auto;
+  margin: 1rem auto;
   display: grid;
   justify-content: center;
   gap: 2rem;
@@ -33,6 +38,7 @@ body{
   padding: 2rem;
   border-radius: 1rem;
   background: #fff;
+  box-shadow: 3px 3px 10px 1px #eaeaea;
 }
 .game img{
   width: 100%;
