@@ -5,7 +5,7 @@ export const Game = (props) => {
       <img src={img} alt={title} />
       <h1>{title}</h1>
       <p>{platform}</p>
-      <p>{price}</p>
+      <p className="price">{price}</p>
     </div>
   )
 }
