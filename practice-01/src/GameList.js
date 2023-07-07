@@ -7,7 +7,7 @@ import game04 from './img/Game04.jpg'
 
 const GameList = () => {
   return (
-    <section>
+    <section className="gamelist">
       <Game game={{
         title: 'Mario Kart 8 Deluxe',
         platform: 'Nintendo Switch',
