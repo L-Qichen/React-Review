@@ -39,6 +39,7 @@ body{
   border-radius: 1rem;
   background: #fff;
   box-shadow: 3px 3px 10px 1px #eaeaea;
+  position: relative;
 }
 .game img{
   width: 100%;
@@ -53,4 +54,26 @@ body{
 }
 .game .price{
   color: #B12704;
+}
+.game > .rank{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #c45500;
+  color: #fafafa;
+  width: 3rem;
+  height: 2rem;
+  font-size: 1rem;
+}
+.rank > p {
+  position: absolute;
+  top: -25%;
+  left: 25%;
+}
+.triangle {
+  border-top: 2rem solid #c45500;
+  border-right: 1rem solid transparent;
+  position: absolute;
+  top: 0;
+  left: 3rem;
 }
