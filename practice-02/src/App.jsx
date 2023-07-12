@@ -1,8 +1,10 @@
+import { FirstExample } from './FirstExample'
 function App() {
 
   return (
     <>
-      <div>Practice-03</div>
+      <h1>Practice-02</h1>
+      <FirstExample />
     </>
   )
 }
