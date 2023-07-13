@@ -1,3 +1,4 @@
+import './FirstExample.css'
 export const FirstExample = () => {
-  return <h2>This example shows why we need UseState hook</h2>
+  return <h3 className='example'>This example shows why we need UseState hook:</h3>
 }
