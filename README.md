@@ -10,6 +10,7 @@ Then use the FirstUseState component to demonstrate how to use the useState hook
 * useState return an array with two elements: the current state value, and a function that use to update the state.
 * State update will triggers re-render.
 * when we use the setState function to update the state, the previous state is not lost (or covered), it still in the memory.
+Added UseStatePractice component to show how useState hook work with array. Used filter method in this example, which is similar with map method, must return a new array.
 
 
 
