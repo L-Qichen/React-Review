@@ -3,7 +3,7 @@ let count = 0;
 export const FirstExample = () => {
   return (
     <>
-      <h3 className='example'>This example shows why we need UseState hook:</h3>
+      <h3 className='title'>This example shows why we need UseState hook:</h3>
       <div className='main'>
         <h3>{count}</h3>
         <button type='button' onClick={() => {
