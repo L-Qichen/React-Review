@@ -11,3 +11,13 @@
   box-shadow: 3px 3px 10px 1px #e1e1e1;
   padding: 2rem 0rem;
 }
+ol > li{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+li > button{
+  margin-top: 4px;
+}
