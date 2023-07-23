@@ -12,5 +12,7 @@ Then use the FirstUseState component to demonstrate how to use the useState hook
 * when we use the setState function to update the state, the previous state is not lost (or covered), it still in the memory.
 Added UseStatePractice component to show how useState hook work with array. Used filter method in this example, which is similar with map method, must return a new array.
 
-
+4. practice-03 - show case of useEffect hook.
+### useEffect hook:
+* Since the useState leads to re-render every time when we update the data(It can cause infinite loop if we use setValue function in an function which called in the component), it may not what we want in some case, for example, we only want a function be called once when the component mounted. Therefore, this is why useEffect is important.
 
