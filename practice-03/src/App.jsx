@@ -1,4 +1,5 @@
 import { UseEffectBasic } from './UseEffectBasic'
+import { UseEffectMulti } from './UseEffectMulti'
 
 function App() {
   return (
@@ -6,6 +7,7 @@ function App() {
       <div className='container'>
         <h1>Practice-03</h1>
         <UseEffectBasic />
+        <UseEffectMulti />
       </div>
     </>
   )
