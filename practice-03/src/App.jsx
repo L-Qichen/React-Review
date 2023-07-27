@@ -1,5 +1,6 @@
 import { UseEffectBasic } from './UseEffectBasic'
 import { UseEffectMulti } from './UseEffectMulti'
+import { UseEffectFetch } from './UseEffectFetch'
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
         <h1>Practice-03</h1>
         <UseEffectBasic />
         <UseEffectMulti />
+        <UseEffectFetch />
       </div>
     </>
   )
