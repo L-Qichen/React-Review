@@ -18,8 +18,8 @@ export const UseEffectMulti = () => {
 
   return (
     <>
-      <h1 className="title">Use Effect Multiple</h1>
-      <div className="main">
+      <h1 className="title" style={{ color: "#EA542A" }}>Use Effect Multiple</h1>
+      <div className="main" style={{ color: "#EA542A" }}>
         {value}
         <button type="button" onClick={(increaseValue)}>increase</button>
         {secondValue}
