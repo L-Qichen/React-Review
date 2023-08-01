@@ -12,7 +12,7 @@ export const UseEffectFetch = () => {
 
   return (
     <>
-      <h1 className="title" style={{ color: "#D781E3" }}>Use Effect Basic</h1>
+      <h1 className="title" style={{ color: "#D781E3" }}>Use Effect Fetch Data</h1>
       <div className="main" style={{ color: "#D781E3" }}>
         <ol>
           {userList.map((user) => {
