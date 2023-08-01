@@ -1,6 +1,7 @@
 import { UseEffectBasic } from './UseEffectBasic'
 import { UseEffectMulti } from './UseEffectMulti'
 import { UseEffectFetch } from './UseEffectFetch'
+import UseEffectConditionalRender from './UseEffectConditionalRender'
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
         <UseEffectBasic />
         <UseEffectMulti />
         <UseEffectFetch />
+        <UseEffectConditionalRender />
       </div>
     </>
   )
