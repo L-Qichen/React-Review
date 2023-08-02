@@ -2,6 +2,7 @@ import { FirstExample } from './FirstExample'
 import { FirstUseState } from './FirstUseState'
 import UseStatePractice from './UseStatePractice'
 import UseStateWithObject from './UseStatePractice2'
+import TogglePractice from './Toggle'
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
       <FirstUseState />
       <UseStatePractice />
       <UseStateWithObject />
+      <TogglePractice />
     </div>
   )
 }

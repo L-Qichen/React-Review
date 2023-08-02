@@ -21,3 +21,9 @@ ol > li{
 li > button{
   margin-top: 4px;
 }
+
+.banner{
+  background-color: pink;
+  margin-top: 8px;
+  padding: 16px;
+}
