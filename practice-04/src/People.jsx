@@ -1,15 +1,18 @@
 import { Person } from "./Person";
-import { people } from "./data"
+import { people } from "./data";
+import './Style.css';
 
 const People = () => {
   return (
-    <div className="main">
+    <>
       {people.map((person) => {
         return (
-          <Person key={person.id} {...person} />
+          <div className="main" key={person.id}>
+            <Person {...person} />
+          </div>
         )
       })}
-    </div>
+    </>
   )
 }
 export default People;
