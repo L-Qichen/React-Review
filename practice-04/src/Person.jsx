@@ -1,10 +1,11 @@
 export const Person = (props) => {
-  [name, img, nickName] = props;
+  const { name } = props;
+  console.log(props);
   return (
     <div>
-      <img src={img} alt={name} />
+      {/* <img src={img} alt={name} /> */}
       <h3>{name}</h3>
-      <h6>Nickname:{nickName}</h6>
+      {/* <h6>Nickname:{nickName}</h6> */}
     </div>
   )
 }
