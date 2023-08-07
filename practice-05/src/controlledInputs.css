@@ -26,7 +26,6 @@ li > img{
   margin-right: 3rem;
 }
 .form-row {
-  border: #D781E3 1px solid;
   display: flex;
   flex-direction: column;
   margin: 16px 0px;
@@ -36,4 +35,12 @@ li > img{
   margin-bottom: 4px;
   text-transform: capitalize;
   letter-spacing: 1px;
+}
+.form-input{
+  padding: 4px;
+  border-radius: 6px;
+  border: 1px solid #e2e8f0;
+}
+.form .form-label {
+  text-align: left;
 }
