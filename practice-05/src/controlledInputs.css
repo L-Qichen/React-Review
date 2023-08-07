@@ -1,0 +1,25 @@
+.title{
+  text-transform: capitalize;
+  margin: 1rem 3rem;
+}
+.main{
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 3px 3px 10px 1px #e1e1e1;
+  padding: 2rem 0rem;
+}
+ol > li{
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  border: 2px solid #D781E3;
+  border-radius: 8px;
+}
+li > img{
+  width: 5rem;
+  height: 5rem;
+  margin-right: 3rem;
+}
