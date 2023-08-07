@@ -10,6 +10,8 @@
   align-items: center;
   box-shadow: 3px 3px 10px 1px #e1e1e1;
   padding: 2rem 0rem;
+  max-width: 520px;
+  margin: auto;
 }
 ol > li{
   display: flex;
@@ -22,4 +24,16 @@ li > img{
   width: 5rem;
   height: 5rem;
   margin-right: 3rem;
+}
+.form-row {
+  border: #D781E3 1px solid;
+  display: flex;
+  flex-direction: column;
+  margin: 16px 0px;
+  width: 360px;
+}
+.form-label{
+  margin-bottom: 4px;
+  text-transform: capitalize;
+  letter-spacing: 1px;
 }
