@@ -2,6 +2,11 @@ import { useState } from 'react';
 import './controlledInputs.css'
 
 const ControlledInputs = () => {
+  // controlled Inputs: 
+  // associate the data(input value) and the html input element.
+  // basically every input value is stored
+  // as useState value. Therefore, we can get the data
+  // which user inputs
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
