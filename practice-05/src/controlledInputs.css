@@ -17,8 +17,8 @@ ol > li{
   display: flex;
   align-items: center;
   margin-bottom: 2rem;
-  border: 2px solid #D781E3;
-  border-radius: 8px;
+  /* border: 2px solid #D781E3;
+  border-radius: 8px; */
 }
 li > img{
   width: 5rem;
