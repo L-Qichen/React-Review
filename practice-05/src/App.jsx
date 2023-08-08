@@ -1,5 +1,6 @@
 import ControlledInputs from "./Controlled-inputs"
 import { FirstPractice } from "./FirstPractice"
+import MultipleInputs from "./MultipleInputs"
 
 function App() {
 
@@ -7,6 +8,7 @@ function App() {
     <>
       <ControlledInputs />
       <FirstPractice />
+      <MultipleInputs />
     </>
   )
 }
