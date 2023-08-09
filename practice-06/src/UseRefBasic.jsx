@@ -30,6 +30,8 @@ export const UseRefBasic = () => {
             <input type='text' id='name' name='name'
               // used ref property to bind this input and 
               // the useRef instance(inputRef)
+              //
+              // its also called uncontrolled inputs
               className='form-input' ref={inputRef}></input>
             <button type='submit' className='btn'>submit</button>
           </div>
