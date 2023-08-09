@@ -1,10 +1,10 @@
+import { FirstExample } from "./FirstExample"
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-
+      <FirstExample />
     </>
   )
 }
