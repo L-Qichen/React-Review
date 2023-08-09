@@ -64,3 +64,27 @@ li > img{
 .form .form-label {
   text-align: left;
 }
+.navbar{
+  background: #e2e8f0;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 2rem;
+  align-items: center;
+  padding: 1rem;
+  .nav-container{
+    display: flex;
+    justify-content: space-between;
+    max-width: 400px;
+    .user-container{
+      display: flex;
+      gap: 1rem;
+      }
+  }
+  .nav-links{
+    display: flex;
+    gap: 1rem;
+    > a{
+        cursor: pointer;
+    }
+  }
+}
