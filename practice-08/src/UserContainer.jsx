@@ -1,8 +1,10 @@
-const UserContainer = () => {
+const UserContainer = ({ user, logout }) => {
   return (
     <div className='user-container'>
-      <p>Hello, UserName</p>
-      <p>Please Login</p>
+      {user ? <>
+        <p>Hello, {user.name}</p>
+        <button type='button' className="btn" onClick={logout}>logout</button>
+      </> : <p>Please Login</p>}
     </div>
   )
 }
