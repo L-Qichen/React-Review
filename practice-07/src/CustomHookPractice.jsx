@@ -1,29 +1,23 @@
-import { useEffect, useState } from "react";
+import { useFetch } from "./useFetch";
 
 const url = 'https://api.github.com/users/QuincyLarson';
 
 const CustomHookPractice = () => {
-  const [user, setUser] = useState(null);
-
-  useEffect(() => {
-    const fetchUser = async () => {
-      try {
-        const response = await fetch(url);
-        const user = await response.json();
-        setUser(user);
-      } catch (error) {
-        console.log(error);
-      }
-    };
-    fetchUser();
-  }, []);
+  const { data: user, isLoading, isError } = useFetch(url);
 
   // use slow 3G to see the result
-  if (!user) {
+  if (isLoading) {
     return (
       <>
         <h1 className="title">Loading...</h1>
       </>);
+  };
+  if (isError) {
+    return (
+      <>
+        <h1 className="title">Error!!!</h1>
+      </>
+    );
   };
 
   return (
