@@ -1,4 +1,4 @@
-const UserContainer = ({ user, logout }) => {
+const UserContainer2 = ({ user, logout }) => {
   return (
     <div className='user-container'>
       {user ? <>
@@ -8,4 +8,4 @@ const UserContainer = ({ user, logout }) => {
     </div>
   )
 }
-export default UserContainer;
+export default UserContainer2;
