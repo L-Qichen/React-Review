@@ -1,4 +1,9 @@
-const UserContainer2 = ({ user, logout }) => {
+import { useContext } from 'react'
+import { navBarContext } from './Navbar2'
+
+const UserContainer2 = () => {
+  const { user, logout } = useContext(navBarContext);
+  console.log('user');
   return (
     <div className='user-container'>
       {user ? <>
@@ -8,4 +13,4 @@ const UserContainer2 = ({ user, logout }) => {
     </div>
   )
 }
-export default UserContainer;
+export default UserContainer2;
