@@ -1,4 +1,5 @@
 import Customers from "./Customers"
+import UseReducerVersion from "./UseReducerVersion"
 
 function App() {
 
@@ -7,6 +8,8 @@ function App() {
       <div className="container">
         <h1>useReducer hook practice:</h1>
         <Customers />
+        <div style={{ margin: "2rem" }} />
+        <UseReducerVersion />
       </div>
     </>
   )
