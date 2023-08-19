@@ -36,8 +36,6 @@ const Customers = () => {
             </li>);
           })}
           {customerList.length <= 0 ?
-            // here must use the callback function to 
-            // avoid reduplicate keys in the list
             (
               <button type="button" className="btn" onClick={resetList}>Reset</button>
             ) : (
