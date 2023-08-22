@@ -31,3 +31,7 @@ If ths condition is true, the operator will return expression1. If the condition
   - if the dependency array(second argument) is an empty array[], it will only run on initial render
 * Therefore, the common use case of useEffect hook are:
 subscriptions, fetching data, directly updating the DOM, event listeners timers...
+
+5. practice-04 - show case of props and show that order matters in JS.
+### JS syntax:
+* we cannot pull out properties from null. Therefore, if we have some code like : const [value, setValue] = useState(null). Then we have to make sure that before we destructure properties of value, there are something store in value state(value cannot be null). Otherwise, javascript will complain and show an error on console.
