@@ -24,4 +24,10 @@ If ths condition is true, the operator will return expression1. If the condition
 4. practice-03 - show case of useEffect hook.
 ### useEffect hook:
 * Since the useState leads to re-render every time when we update the data(It can cause infinite loop if we use setValue function in an function which called in the component), it may not what we want in some case, for example, we only want a function be called once when the component mounted. Therefore, this is why useEffect is important.
-
+* The useEffect hook accepts two arguments(second optional - if no second optional, then it default run on each render which means initial render and re-render)
+  - first argument is a callback function
+  - second argument is the dependency array
+  - remember that callback function(first argument) cannot return a promise(so cannot make it async)
+  - if the dependency array(second argument) is an empty array[], it will only run on initial render
+* Therefore, the common use case of useEffect hook are:
+subscriptions, fetching data, directly updating the DOM, event listeners timers...
