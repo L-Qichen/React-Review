@@ -35,3 +35,11 @@ subscriptions, fetching data, directly updating the DOM, event listeners timers.
 5. practice-04 - show case of props and show that order matters in JS.
 ### JS syntax:
 * we cannot pull out properties from null. Therefore, if we have some code like : const [value, setValue] = useState(null). Then we have to make sure that before we destructure properties of value, there are something store in value state(value cannot be null). Otherwise, javascript will complain and show an error on console.
+
+6. practice-05 - show case of controlled inputs.
+### controlled inputs:
+* When we use form in our web page, in html the <input> labels will hold their own states and update the value by user's input. In react, we can store input values in states(which come from useState hook) to control(track) the values, which is called controlled inputs. It implements in three steps:
+  - setup state values
+  - add value property and onChange event to each input
+  - setup onSubmit event to submit button
+* if we have multiple inputs, we can use an object state value to store them, each input value associate a property of the object. In this case, each input label must have an name property use to identify which input value is changed.
