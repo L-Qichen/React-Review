@@ -52,3 +52,7 @@ subscriptions, fetching data, directly updating the DOM, event listeners timers.
   - useRef hook don't trigger the re-render
   - useRef returns an object with a ***current*** property
   Thats why we can think useRef more like a container, which can use its current property to carry any object. Therefore, one common use case is using useRef to target a DOM node or element. For example: using ref property of <input> to implement uncontrolled inputs.
+
+8. practice-07 - show case of custom hook.
+### custom hook:
+* basically custom hook is encapsulation the variables(could be state, reducer, etc) and logic (functions and actions) together for reuse it in an other components.
