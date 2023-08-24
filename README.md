@@ -43,3 +43,12 @@ subscriptions, fetching data, directly updating the DOM, event listeners timers.
   - add value property and onChange event to each input
   - setup onSubmit event to submit button
 * if we have multiple inputs, we can use an object state value to store them, each input value associate a property of the object. In this case, each input label must have an name property use to identify which input value is changed.
+
+7. practice-06 - show case of useRef.
+### useRef hook:
+* Common between useRef and useState hooks:
+  - preserves the value between renders
+* Difference between useRef and useState hooks:
+  - useRef hook don't trigger the re-render
+  - useRef returns an object with a ***current*** property
+  Thats why we can think useRef more like a container, which can use its current property to carry any object. Therefore, one common use case is using useRef to target a DOM node or element. For example: using ref property of <input> to implement uncontrolled inputs.
