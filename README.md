@@ -56,3 +56,13 @@ subscriptions, fetching data, directly updating the DOM, event listeners timers.
 8. practice-07 - show case of custom hook.
 ### custom hook:
 * basically custom hook is encapsulation the variables(could be state, reducer, etc) and logic (functions and actions) together for reuse it in an other components.
+
+9. practice-08 - show case of props drilling and useContext.
+### props drilling:
+* normally when we use props pass the attributes to a component's grandchild, we have to do this way: parent -> children -> grand-children. Even if we don't want to use the data in children component. This is called props drilling.
+### useContext hook:
+* useContext hook is use to avoid props drilling. It allowed us to pass the props directly from parent to grand-children. The steps is as following:
+ - first step, use createContext API to create a context then export this context to allowed other components to use it 
+ - second step, use useContext hook in the children components to use the context which you create in the parent component 
+ - third step, provide the context you created in parent component and wrap the children components by context.Provider. The props pass as an object by the value property of <context.Provider>
+ *** Ps: the context.Provider has a value property, which use to past the parameter(usually is a object) for let children components to use ***
