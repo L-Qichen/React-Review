@@ -67,3 +67,32 @@ subscriptions, fetching data, directly updating the DOM, event listeners timers.
  - third step, provide the context you created in parent component and wrap the children components by context.Provider. The props pass by the value property of <context.Provider>.
  *** Ps: the context.Provider has a value property, which use to past the parameter(usually is a object) for let children components to use ***
 
+10. practice-09 - show case of useReducer.
+### useReducer hook:
+* reducer is kind of plus version of state it contains the state and the actions of how you want to manipulate the state value. In other words, reducer is use to manage the state(s).
+* there are two common parameters of useReducer hook:
+  1. the reducer that you create before
+  2. the initial(default) state value
+* useReducer hook return an array which contain two elements:
+  1. ***current*** value of the state
+  2. dispatch function use to update state and also
+trigger the re-render of the component
+* usually the initialization of default state should be a object, since we can add more states as a property to the same state. As result, we can use one reducer to manage more states.
+* there are three steps to use the useReducer hook:
+ - initialize the default state:
+ ```javascript
+ const defaultState = {
+  customerList: customers,
+}
+ ```
+ - create reducer:
+ ```javascript
+ const reducer = (state, action) => {
+  ...
+ }
+ ```
+ The return value of reducer is the state value after updated
+ - use the useReducer hook in your component:
+ ```javascript
+   const [state, dispatch] = useReducer(reducer, defaultState);
+ ```
