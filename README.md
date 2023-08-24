@@ -64,5 +64,6 @@ subscriptions, fetching data, directly updating the DOM, event listeners timers.
 * useContext hook is use to avoid props drilling. It allowed us to pass the props directly from parent to grand-children. The steps is as following:
  - first step, use createContext API to create a context then export this context to allowed other components to use it 
  - second step, use useContext hook in the children components to use the context which you create in the parent component 
- - third step, provide the context you created in parent component and wrap the children components by context.Provider. The props pass as an object by the value property of <context.Provider>
+ - third step, provide the context you created in parent component and wrap the children components by context.Provider. The props pass by the value property of <context.Provider>.
  *** Ps: the context.Provider has a value property, which use to past the parameter(usually is a object) for let children components to use ***
+
